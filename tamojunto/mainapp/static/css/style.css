@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Contrail One');
+
+
+
+.testimonials-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .testimonials-section h2 {
+    color: #0D6F8F;
+    font-family: 'Contrail One';
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  .testimonials-container {
+    position: relative;
+  }
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+  }
+  .testimonial {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Ajustado para uma sombra mais visível */
+    padding: 20px;
+    max-width: 300px;
+    height: fit-content;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial p {
+    font-size: 16px;
+    line-height: 1.5;
+    
+  }
+  .testimonial .author {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+  }
+  .testimonial .author img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .testimonial .author .name {
+    font-weight: bold;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .pagination div {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .pagination .active {
+    background-color: #0D6F8F;
+  }
+  .navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  .navigation button {
+    border: none;
+    background-color: transparent;
+    color: #0D6F8F;
+    font-size: 40px;
+    font-family: 'Contrail One';    
+    padding: 10px;
+    cursor: pointer;
+  }
+h2 {
+    color: #333;
+}
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Contrail One';
+    padding: 10px; /* Ajuste o valor conforme necessário */
+    display: inline-block; /* Faz com que o background se ajuste ao tamanho do conteúdo */
+    border-radius: 7px;
+}
+
+.btn-lg{
+    background-color: #8FCE3D;
+    color: white;
+}
+
+.custom-border {
+    border-color: #8FCE3D !important;
+  }
+
+
+span{
+    color: #0D6F8F;
+}
+
+/* temos que definir quais fontes vamos utilizar no site... deixei essas por padrão */
+body {
+    font-family: 'Poppins', sans-serif; 
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #fafbfe;
+}
+
+.btn-lg:hover{
+    background-color: #8FCE3D;
+}
+
+.btn-lg{
+    background-color: #0D6F8F;
+}

@@ -1,0 +1,184 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="{% static 'css/style_esportes.css' %}" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar fixa no topo -->
+  {% include "default/nav.html" %}
+    <div class="container">
+        <h1>ESPORTES</h1>
+        <div class="sports-list">
+            <!-- Repeat this block 17 times -->
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Vôlei de Praia</h2>
+                    <p>O vôlei de quadra é jogado por duas equipes de seis jogadores em uma quadra dividida por uma rede. O objetivo é enviar a bola por cima da rede para que toque o chão do lado adversário, sem que a equipe adversária consiga retornar a bola. Cada equipe pode tocar na bola até três vezes antes de enviá-la de volta ao campo adversário.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Vôlei de Quadra</h2>
+                    <p>Semelhante ao vôlei de quadra, mas jogado na areia e com equipes de dois jogadores. As regras são basicamente as mesmas, mas o jogo é adaptado ao ambiente da praia, o que torna a movimentação mais desafiadora.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Futebol de Quadra</h2>
+                    <p>Futsal é jogado em uma quadra menor que a de futebol tradicional, com cinco jogadores em cada equipe, incluindo o goleiro. As regras são semelhantes ao futebol de campo, mas com algumas adaptações para o espaço reduzido e a velocidade do jogo.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Basquete</h2>
+                    <p>O basquete é jogado por duas equipes de cinco jogadores em uma quadra. O objetivo é marcar pontos ao arremessar a bola dentro da cesta do adversário. As equipes também tentam impedir que o adversário marque pontos, defendendo sua cesta.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Boxe</h2>
+                    <p>Boxe é um esporte de combate onde dois competidores se enfrentam em um ringue, usando luvas acolchoadas. O objetivo é acertar golpes no adversário, acumulando pontos ou conseguindo um nocaute.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Futebol de Campo</h2>
+                    <p>O futebol de campo é jogado por duas equipes de onze jogadores em um campo grande. O objetivo é marcar gols enviando a bola para dentro da baliza adversária, enquanto se defende para impedir que o adversário marque.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Muay Thai</h2>
+                    <p>Muay Thai é uma arte marcial originária da Tailândia, conhecida como a "arte das oito armas", devido ao uso de punhos, cotovelos, joelhos e canelas. Os combates são realizados em um ringue e os lutadores utilizam técnicas de ataque e defesa com todas as partes do corpo.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Jiu-Jitsu</h2>
+                    <p>Jiu Jitsu é uma arte marcial focada no grappling e nas técnicas de imobilização e submissão. Os praticantes procuram levar o adversário ao chão e utilizar alavancas e estrangulamentos para forçá-lo a desistir.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Luta Livre</h2>
+                    <p>Luta Livre é um esporte de combate onde dois competidores tentam imobilizar o adversário utilizando técnicas de wrestling. As lutas podem ser vencidas por pinfall, submissão ou pontos.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Futebol de Areia</h2>
+                    <p>Futebol de areia é jogado em uma quadra de areia, com equipes de cinco jogadores. As regras são semelhantes ao futebol de campo, mas adaptadas ao ambiente de areia, o que torna o jogo mais dinâmico e exige maior resistência dos jogadores.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Handbol de Areia</h2>
+                    <p>Handebol de areia é jogado em uma quadra de areia com equipes de quatro jogadores. O objetivo é marcar gols no gol adversário, com regras adaptadas para o ambiente de areia, incluindo jogadas aéreas e um ritmo mais rápido.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Handbol de Quadra</h2>
+                    <p>Handebol de quadra é jogado em uma quadra coberta por duas equipes de sete jogadores. O objetivo é marcar gols arremessando a bola para dentro do gol adversário, com passes rápidos e jogadas estratégicas.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Tênis</h2>
+                    <p>Tênis é jogado em uma quadra dividida por uma rede, onde os jogadores usam raquetes para golpear uma bola para o lado adversário. O objetivo é fazer com que a bola toque o solo do lado do adversário ou que o adversário não consiga devolver a bola corretamente.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Skate</h2>
+                    <p>Skate é um esporte onde os praticantes utilizam um skate para realizar manobras em diversos tipos de terrenos, como pistas de skate (skate parks), ruas ou rampas. O objetivo pode variar desde a execução de truques até competições de velocidade ou estilo.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Atletismo</h2>
+                    <p>Atletismo é um conjunto de esportes que incluem corrida, saltos, lançamentos e marchas atléticas. Os atletas competem para alcançar a melhor marca em cada disciplina, seja em velocidade, distância ou altura.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Futebol de Salão</h2>
+                    <p>Similar ao futebol de quadra, o futsal é jogado em uma quadra menor com cinco jogadores em cada equipe. É um jogo rápido com foco em habilidades técnicas e controle de bola.</p>
+                </div>
+            </div>
+            <div class="sport">
+                <div class="sport-image">
+                    <img src="{% static 'img/esportes_image.png' %}" width="200" height="250" alt="Vôlei de Praia">
+                </div>
+                <div class="sport-content">
+                    <h2>Futebol de Rua</h2>
+                    <p>Futebol de rua é uma forma mais informal e flexível de futebol, jogado em ruas, parques ou qualquer espaço disponível. As regras são adaptadas conforme o ambiente e o número de jogadores, focando na diversão e na habilidade individual.</p>
+                </div>
+            </div>
+            <!-- Repeat end -->
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
