@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cadastro</title>
+  <link href="{% static 'css/style_cad.css' %}" rel="stylesheet" type="text/css" />
+  <!-- CSS do Bootstrap via CDN -->
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar fixa no topo -->
+  {% include "default/nav.html" %}
+
+  <main>
+    <div class="container">
+        <h1 id="cadastro">CADASTRO</h1>
+        <div class="options">
+            <div class="option membro">
+                <h2>MEMBRO</h2>
+                <p> Se cadastrar como membro significa que o usuário poderá ingressar em qualquer grupo de esporte da comunidade "Tamo Junto".</p>
+                <p>Um membro poderá também criar grupos para a realização de esportes que não precisam de um instrutor.</p>
+                <a href="#" class="button">Criar conta</a>
+            </div>
+            <div class="or">OU</div>
+            <div class="option instrutor">
+                <h2>INSTRUTOR</h2>
+                <p>O instrutor também pode ingressar em qualqauer grupo de esporte da comunidade "Tamo Junto."</p>
+                <p> O instrutor tem a permissão para criar grupos de esportes que requerem auxilio de um profissional, podendo lucrar com a plataforma.</p>
+                <a href="#" class="button">Criar conta</a>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
