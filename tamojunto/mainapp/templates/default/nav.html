@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="{% static 'css/style_nav.css' %}">
 <nav class="navbar navbar-expand-lg  sticky-top">
-    <a class="navbar-brand" href="home" style="margin-left: 30px">
+    <a class="navbar-brand" href="{% url 'home' %}" style="margin-left: 30px">
     <img src="{% static 'img/logo.png' %}" height="50" class="d-inline-block align-center" alt="logo">
     TAMO JUNTO
     </a>
@@ -32,7 +32,7 @@
         <li class="nav-item">
         <form class="form-inline" style="margin-right: 30px;">
             <button class="btn btn-outline-success" type="button">Login</button>
-            <a href='cadastro' class="btn btn-outline-success" role="button">Cadastre-se</a>
+            <a href="{% url 'cadastro' %}" class="btn btn-outline-success" role="button">Cadastre-se</a>
         </form>
         </li>
     </ul>
