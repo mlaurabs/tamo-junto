@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Contrail One');
+
+
+ .btn:hover {
+    background-color: #267791;
+  }
+
+
+  .btn:active{
+    border: none;
+  }
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn-outline-success{
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-success:hover{
+    background-color: #8FCE3D;
+    color: white;
+}
+
+span{
+    color: #0D6F8F;
+}
+
+a.navbar-brand{
+    color: white;
+    font-family: 'Contrail One';
+}
+
+a.navbar-brand:hover{
+    color: #8FCE3D;
+}
+
+a.navbar-brand:focus{
+    color: #8FCE3D;
+}
+
+a.nav-link{
+    color: white;
+}
+
+a.nav-link:hover{
+    color: #8FCE3D;
+}
+
+a.nav-link:focus{
+    color: #8FCE3D;
+}
+
+.navbar{
+    background-color: #0D6F8F;
+    border: 2px;
+    border-color: #8FCE3D;
+}
+
+.dropdown-item{
+    color: #0D6F8F;
+}
+
+.dropdown-item:hover{
+    color: #8FCE3D;
+}
+
+.dropdown-item:focus{
+    color: white;
+    background-color: #0D6F8F;
+}
