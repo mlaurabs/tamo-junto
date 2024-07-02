@@ -1,0 +1,79 @@
+
+#imgLogin{
+    width: 65.18px;
+    height: 67.95px;
+    margin-left:72px;
+    margin-top: 12px;
+}
+
+#organizarLogin{
+    display: flex;
+    flex-direction: row;
+}
+#tituloLogin{
+    margin-top:25px;
+    margin-bottom:30px;
+    margin-left:87px;
+    font-size:54px;
+    color:rgba(55,133,158,1);
+}
+.selections{
+    margin-left:90px;
+    margin-top:24px;
+    color: rgba(0,0,0,0.5);
+    font-size:20px
+
+}
+#input{
+    width: 580px;
+    height: 96px;
+    border-radius:23px;
+}
+.form-check{
+    margin-left:90px;
+    margin-top:35px;
+    font-size:20px;
+    color: rgba(0,0,0,0.5);
+}
+#botoesAcesso{
+    display:flex;
+    flex-direction: column;
+   
+}
+#botaoEntrar{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color:rgba(143,206,61,1);
+    color: white;
+    font-size:24px;
+    font-weight:bold;
+    border-radius:23px;
+    width: 580px;
+    height:74px;
+    margin-left:90px;
+    margin-top:35px;
+    border:0px;
+}
+#botaoCadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(252,249,244,1);
+    color:rgba(143,206,61,1);
+    font-size:24px;
+    font-weight:bold;
+    border-radius:23px;
+    width: 580px;
+    height:74px;
+    margin-left:90px;
+    margin-top:24px;
+    border: solid 2px rgba(143,206,61,1);;
+}
+#imgPerfil{
+    width:700.51px;
+    height:437.28px;
+    margin-top:124px;
+    margin-left:74px;
+}

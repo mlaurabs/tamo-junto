@@ -10,3 +10,9 @@ def cadastro(request):
 
 def esportes(request):
     return render(request, "esportes.html") 
+
+def login(request):
+    return render(request, "login.html") 
+
+def cards(request):
+    return render(request, "cards.html") 
