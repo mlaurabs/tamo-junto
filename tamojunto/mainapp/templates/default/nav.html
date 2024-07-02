@@ -15,7 +15,7 @@
         <a class="nav-link" href="#">Quem somos?</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="\cards">Cards</a>
+        <a class="nav-link" href="{% url 'cards' %}">Cards</a>
         </li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -23,7 +23,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Saúde e Atividade Física</a>
-            <a class="dropdown-item" href="esportes">Esportes populares</a>
+            <a class="dropdown-item" href="{% url 'esportes' %}">Esportes populares</a>
             <a class="dropdown-item" href="#">Como funciona a comunidade TAMO JUNTO?</a>
         </div>
         </li>
@@ -31,10 +31,11 @@
     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
         <form class="form-inline" style="margin-right: 30px;">
-            <a href='\login' class="btn btn-outline-success" type="button">Login</a>
+            <a href="{% url 'login' %}" class="btn btn-outline-success" type="button">Login</a>
             <a href="{% url 'cadastro' %}" class="btn btn-outline-success" role="button">Cadastre-se</a>
         </form>
         </li>
     </ul>
     </div>
 </nav>
+

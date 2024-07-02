@@ -20,9 +20,9 @@ from mainapp import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('cadastro/', views.cadastro),
-    path('esportes/', views.esportes),
-    path('login/', views.login),
-    path('cards/', views.cards),
+    path('cadastro/', views.cadastro, name='cadastro'),
+    path('esportes/', views.esportes, name="esportes"),
+    path('login/', views.login, name="login"),
+    path('cards/', views.cards, name="cards"),
     path('admin/', admin.site.urls),
 ]
