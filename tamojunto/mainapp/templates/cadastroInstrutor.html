@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro Instrutor</title>
+    <link href="{% static 'css/style_cadastroMemIn.css' %}" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    {% include "default/nav.html" %}
+    <div id="tituloCadastro"> Cadastre-se como Instrutor</div>
+    <div id="containerDadosPessoais"> 
+        <form action="">
+            <div class="subtituloCadastro"> Dados pessoais </div>
+            <div class="organizarInputsLinhas">
+                <div class="posicaoLabel" id="labelNome"> Nome Completo </div>
+                <input class="inputs" id="inputNome" type="text">
+                <div class="posicaoLabel" id="labelIdade"> Idade </div>
+                <select class="inputs" id="inputIdade">
+                    <option value="18"> 18 </option>
+                </select>
+            </div>
+            <div class="organizarInputsLinhas">
+                <div class="posicaoLabel" id="labelPais"> País </div>
+                <select class="inputs" id="inputPais">
+                    <option value="brasil"> Brasil </option>
+                </select>
+                <div class="posicaoLabel" id="labelCep"> CEP </div>
+                <input class="inputs" id="inputCep" type="text">
+                <div class="posicaoLabel" id="labelCidade"> Cidade </div>
+                <select class="inputs" id="inputCidade">
+                    <option value="rio"> Rio de Janeiro </option>
+                    <option value="niteroi">Niterói </option>
+                </select>
+            </div>
+            <div class="organizarInputsLinhas">
+                <div class="posicaoLabel" id="labelRua"> Rua </div>
+                <input class="inputs" id="inputRua" type="text">
+                <div class="posicaoLabel" id="labelNum"> N° </div>
+                <input class="inputs" id="inputNum" type="text">
+                <div class="posicaoLabel" id="labelComplemento"> Complemento </div>
+                <input class="inputs" id="inputComplemento" type="text">
+                <div class="posicaoLabel" id="labelCodigo"> Código </div>
+                <select class="inputs" id="inputCodigo">
+                    <option value="55"> +55 </option>
+                </select>
+                
+                <div class="posicaoLabel" id="labelDDD"> DDD </div>
+                <input class="inputs" id="inputDDD" type="text">
+                <div class="posicaoLabel" id="labelTelefone"> Telefone </div>
+                <input class="inputs" id="inputTelefone" type="text">
+            </div>
+            <div class="organizarInputsLinhas">
+                <div class="posicaoLabel" id="labelFoto"> Foto </div>
+                <input class="inputs" id="inputFoto" type="file">
+                <div id="divFoto"></div>
+                <div id="botaoFotoUpload"> Upload</div>
+                <div class="posicaoLabel" id="labelGenero"> Gênero </div>
+                <select class="inputs" id="inputGenero">
+                    <option value="feminino"> Feminino </option>
+                    <option value="masculino"> Masculino </option>
+                    <option value="outros"> Outros </option>
+                </select>
+                
+            
+            </div>
+            <div  id="subtituloInteresses"class="subtituloCadastro"> Interesses </div>
+            <div class="posicaoLabel" id="labelBiografia"> Biografia </div>
+            <input class="inputs" id="inputBiografia" type="text">
+            <div class="posicaoLabel" id="labelInteresse"> O que mais você tem interesse? </div>
+            <div class="organizarInputsLinhas">
+                <select class="inputs" id="inputInteresse">
+                    <optgroup label="Esportes"> 
+                        <option value="yoga"> yoga </option>
+                        <option value="volei"> vôlei </option>
+                        <option value="futsal"> futsal </option>
+                        <option value="basquete"> basquete </option>
+                        <option value="handebol"> handebol </option>
+                        <option value="futebol"> futebol </option>
+                    </optgroup>
+                    <optgroup label="Lugares"> 
+                        <option value="norte"> Zona Norte </option>
+                        <option value="sul"> Zona Sul </option>
+                        <option value="central"> Zona Central </option>
+                        <option value="oeste"> Zona Oeste </option>
+                        <option value="niteroi"> Niterói </option>
+                    </optgroup>
+                </select>
+                <div class="posicaoLabel" id="labelInstruir"> Qual ou quais atividaes você gostaria de instruir? </div>
+                <input class="inputs" id="inputInstruir" type="text">
+            </div>
+            <div id="divCertificado"></div>
+            <div id="botaoCertificadoUpload"> Upload</div>
+            <div class="posicaoLabel" id="labelCertificado"> Certificado </div>
+            <input class="inputs" id="inputCertificado" type="file">
+           
+
+            <button id="botaoFinalizar"> Finalizar cadastro </button>
+        </form>
+
+    </div>
+    
+</body>
+</html>

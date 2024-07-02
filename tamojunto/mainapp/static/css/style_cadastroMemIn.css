@@ -1,0 +1,240 @@
+#tituloCadastro{
+    text-align: center;
+    margin-top: 33px;
+    font-size: 45px;
+    color: rgba(13,111,143,1);
+    
+
+}
+#containerDadosPessoais{
+    width: 936px;
+    display: block;
+    margin: 0 auto;
+    margin-top:17px;
+  
+}
+.subtituloCadastro{
+    font-size: 25px;
+    color: rgba(49,49,49,0.7);
+}
+
+.posicaoLabel{
+    display: flex;
+    position: absolute;
+    margin-top: 6px;
+    font-size: 18px;
+    padding: 4px;
+    color: rgba(28, 27, 31, 1);
+    background-color:  white
+}
+
+.inputs{
+    height: 56px;
+    margin-top: 20px;
+    border: solid 3px rgba(121, 116, 126, 1);
+    border-radius: 4px 4px 0px 0px;
+    background-color: transparent;
+    font-size: 16px;
+    color: rgba(28, 27, 31, 1);
+}
+.organizarInputsLinhas{
+    display: flex;
+    flex-direction: row;
+}
+#labelNome{
+    margin-left: 20px;
+}
+#inputNome{
+    width: 693px;
+    margin-right: 26px;
+}
+#labelIdade{
+    margin-left:739px;
+}
+#inputIdade{
+    width: 217px;
+    height: 64px;
+}
+#labelPais{
+    margin-left: 20px;
+}
+#inputPais{
+    width: 359px;
+    height: 64px;
+    margin-right: 26px;
+}
+#labelCep{
+    margin-left: 410px;
+}
+#inputCep{
+    width: 186px;
+    margin-right: 26px;
+}
+#labelCidade{
+    margin-left: 626px;
+}
+#inputCidade{
+    width: 330px;
+    height: 64px;
+}
+#labelRua{
+    margin-left: 20px;
+}
+#inputRua{
+    width: 186px;
+    margin-right: 18px;
+}
+#labelNum{
+    margin-left: 233px;
+}
+#inputNum{
+    width: 72px;
+    margin-right: 18px;
+}
+#labelComplemento{
+    margin-left: 332px;
+}
+#inputComplemento{
+    width: 156px;
+    margin-right: 27px;
+}
+#labelCodigo{
+    margin-left: 522px;
+}
+#inputCodigo{
+    width: 93px;
+    height: 64px;
+    margin-right: 18px;
+}
+#labelDDD{
+    margin-left: 642px;
+}
+#inputDDD{
+    width: 76px;
+    margin-right: 18px;
+}
+#labelTelefone{
+    margin-left: 751px;
+}
+#inputTelefone{
+    width: 205px;
+}
+#labelFoto{
+    margin-left: 20px;
+    z-index: 100001;
+}
+#inputFoto{
+    width: 597px;
+    height: 40px;
+    padding-top: 18px;
+    margin-right: 26px;
+    z-index: 100000;
+    
+}
+#divFoto{
+    display: flex;
+    position:absolute;
+    width: 102px;
+    height: 25px;
+    margin-top: 40px;
+    margin-left: 3px;
+    background-color: white;
+    z-index: 100001;
+}
+#botaoFotoUpload{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    padding-top: 10px;
+    width: 129px;
+    height: 25px;
+    margin-top: 35px;
+    margin-left: 450px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(143,206,61,1);
+    color: white;
+    
+    
+}
+#labelGenero{
+    margin-left: 642px;
+}
+#inputGenero{
+    width: 314px;
+    height: 64px;
+}
+#subtituloInteresses{
+    margin-top: 43px;
+}
+#labelBiografia{
+    margin-left: 20px;
+}
+#inputBiografia{
+    width: 926px;
+}
+#labelInteresse{
+    margin-left: 20px;
+}
+#inputInteresse{
+    width: 936px;
+    height: 64px;
+}
+#labelInstruir{
+    margin-left: 551px;
+}
+#inputInstruir{
+    width: 405px;
+    margin-left: 27px;
+}
+#botaoFinalizar{
+    width: 205px;
+    height: 47px;
+    margin-left: 728px;
+    margin-top: 30px;
+    font-size:20px;
+    font-weight: bold;
+    background-color:rgba(143,206,61,1);
+    border:0px;
+    color: white;
+    border-radius: 10px;
+    
+}
+#labelCertificado{
+    margin-left: 20px;
+    z-index: 100001;
+}
+#inputCertificado{
+    width: 936px;
+    height: 40px;
+    padding-top: 18px;
+    margin-right: 26px;
+    z-index: 100000;
+    
+}
+#divCertificado{
+    display: flex;
+    position:absolute;
+    width: 102px;
+    height: 25px;
+    margin-top: 40px;
+    margin-left: 3px;
+    background-color: white;
+    z-index: 100001;
+}
+#botaoCertificadoUpload{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    padding-top: 10px;
+    width: 129px;
+    height: 25px;
+    margin-left: 800px;
+    margin-top: 35px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(143,206,61,1);
+    color: white;
+}

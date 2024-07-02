@@ -8,6 +8,12 @@ def home(request):
 def cadastro(request):
     return render(request, "cadastro.html") 
 
+def cadastroMembro(request):
+    return render(request, "cadastroMembro.html")
+
+def cadastroInstrutor(request):
+    return render(request, "cadastroInstrutor.html") 
+
 def esportes(request):
     return render(request, "esportes.html") 
 

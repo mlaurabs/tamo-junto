@@ -21,6 +21,8 @@ from mainapp import views
 urlpatterns = [
     path('', views.home, name='home'),
     path('cadastro/', views.cadastro, name='cadastro'),
+    path('cadastroMembro/', views.cadastroMembro, name='cadastroMembro'),
+    path('cadastroInstrutor/', views.cadastroInstrutor, name='cadastroInstrutor'),
     path('esportes/', views.esportes, name="esportes"),
     path('login/', views.login, name="login"),
     path('cards/', views.cards, name="cards"),
