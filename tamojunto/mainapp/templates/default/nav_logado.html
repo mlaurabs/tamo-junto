@@ -1,0 +1,61 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style_nav_loagdo.css' %}">
+<nav class="navbar navbar-expand-lg  sticky-top">
+    <a class="navbar-brand" href="#" style="margin-left: 30px">
+    <img src="{% static 'img/logo.png' %}" height="50" class="d-inline-block align-center" alt="logo">
+    TAMO JUNTO
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Quem somos?</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Cards</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Área Informativa
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Saúde e Atividade Física</a>
+            <a class="dropdown-item" href="#">Esportes populares</a>
+            <a class="dropdown-item" href="#">Como funciona a comunidade TAMO JUNTO?</a>
+        </div>
+        </li>
+    </ul>
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item" style="margin-right: 50px;">
+            <svg width="3" height="58" viewBox="0 0 3 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1.5" x2="1.5" y2="68" stroke="white" stroke-width="3"/>
+                </svg>                
+        </li>
+        <li style="margin-right: 30px; position: relative;">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg width="59" height="53" viewBox="0 0 59 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_650_2183)">
+                    <path d="M29.0959 26.8958C31.4137 26.8958 33.6795 26.3158 35.6067 25.2293C37.5339 24.1428 39.036 22.5985 39.923 20.7917C40.81 18.9849 41.0421 16.9967 40.5899 15.0786C40.1377 13.1605 39.0216 11.3986 37.3826 10.0158C35.7436 8.63291 33.6555 7.69116 31.3822 7.30963C29.1089 6.9281 26.7526 7.12391 24.6112 7.87232C22.4698 8.62072 20.6395 9.8881 19.3517 11.5142C18.064 13.1403 17.3767 15.052 17.3767 17.0077C17.3798 19.6294 18.6155 22.1429 20.8126 23.9967C23.0097 25.8505 25.9887 26.8931 29.0959 26.8958ZM29.0959 10.4157C30.6411 10.4157 32.1516 10.8023 33.4364 11.5266C34.7212 12.251 35.7226 13.2805 36.314 14.485C36.9053 15.6896 37.06 17.015 36.7586 18.2937C36.4571 19.5725 35.713 20.7471 34.6204 21.669C33.5277 22.5909 32.1356 23.2187 30.6201 23.4731C29.1046 23.7274 27.5337 23.5969 26.1061 23.0979C24.6785 22.599 23.4583 21.7541 22.5998 20.67C21.7413 19.586 21.2831 18.3115 21.2831 17.0077C21.2831 15.2594 22.1062 13.5827 23.5714 12.3464C25.0366 11.1102 27.0238 10.4157 29.0959 10.4157V10.4157Z" fill="white"/>
+                    <path d="M29.0959 30.1929C24.4353 30.1972 19.9671 31.7613 16.6715 34.5419C13.376 37.3225 11.5223 41.0926 11.5171 45.025C11.5171 45.462 11.7229 45.8812 12.0892 46.1903C12.4555 46.4993 12.9523 46.673 13.4703 46.673C13.9883 46.673 14.4851 46.4993 14.8514 46.1903C15.2177 45.8812 15.4235 45.462 15.4235 45.025C15.4235 41.9654 16.864 39.0312 19.4281 36.8677C21.9921 34.7043 25.4697 33.4889 29.0959 33.4889C32.722 33.4889 36.1996 34.7043 38.7637 36.8677C41.3278 39.0312 42.7683 41.9654 42.7683 45.025C42.7683 45.462 42.974 45.8812 43.3403 46.1903C43.7066 46.4993 44.2034 46.673 44.7215 46.673C45.2395 46.673 45.7363 46.4993 46.1026 46.1903C46.4689 45.8812 46.6747 45.462 46.6747 45.025C46.6695 41.0926 44.8158 37.3225 41.5202 34.5419C38.2247 31.7613 33.7565 30.1972 29.0959 30.1929V30.1929Z" fill="white"/>
+                    </g>
+                    <path d="M57.25 26.5C57.25 39.9972 45.0071 51.25 29.5 51.25C13.9928 51.25 1.75 39.9972 1.75 26.5C1.75 13.0028 13.9928 1.75 29.5 1.75C45.0071 1.75 57.25 13.0028 57.25 26.5Z" stroke="white" stroke-width="3.5"/>
+                    <defs>
+                    <clipPath id="clip0_650_2183">
+                    <rect width="46.8767" height="39.5522" fill="white" transform="translate(5.65753 7.11963)"/>
+                    </clipPath>
+                    </defs>
+                </svg> 
+            </a>     
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Minha conta</a>
+                <a class="dropdown-item" href="#">Sair</a>
+            </div>       
+        </li>
+    </ul>
+    </div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
