@@ -18,7 +18,7 @@
     <div id="buscaBotaoContainer">
         <div class="selections">
           <div class="form-floating">
-            <img id="iconeBusca" src="sel">
+            <img id="iconeBusca" src="{% static 'img/pesquisa.svg' %}">
             <input type="search" class="form-control" id="inputBusca" placeholder="Região Central" >
             <label id="labelBusca"for="inputBusca"> Busque por esportes, regiões, pessoas... </label>
             
@@ -33,37 +33,37 @@
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
-            Vôlei
+            Vôlei Quadra
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
-           Futebol de quadra
+           Futebol
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
-            Futebol de campo
+            Atletismo
           </label>
         </div>  
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
-            Basquete
+            Jiu-Jitsu
           </label>
         </div>  
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
-            Boxe
+            Muay Thai
           </label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           <label class="form-check-label" for="defaultCheck1">
-            Corrida
+            Vôlei de Praia
           </label>
         </div>
         <div class="SubtituloFiltros"> Localidades mais populares</div>
@@ -108,13 +108,13 @@
         <div id="organizarCards">
           <div class="cardCriado">
             <div class="cardEsporte"> 
-            <img class="imagemCard"src="esportes.png">
+            <img class="imagemCard"src="{% static 'img/voleiPraia.png' %}">
             <div class="OrdernarTextoEstrela">
               <div class="textoEsporteCard"> Vôlei de Praia </div>
-              <img class="EstrelaCard" src="estrela.png">
+              <img class="EstrelaCard" src="{% static 'img/estrelaVerde.png' %}">
             </div>
             <div class="textoInformacaoCard"> Morro do Céu - Niterói</div>
-            <div class="textoInformacaoCard"> Seg, Qua e Sexta (8h às 10h)</div>
+            <div class="textoInformacaoCard"> Seg, Qua e Sex (8h às 10h)</div>
             </div>
             <div class="textoCardVerde"> Local: Praia de Piratininga</div>
             <div class="textoCardVerde"> Equipamento Disponível</div>
@@ -122,79 +122,96 @@
           </div>
           <div class="cardCriado">
             <div class="cardEsporte"> 
-            <img class="imagemCard"src="esportes.png">
+            <img class="imagemCard"src="{% static 'img/voleiQuadra.png' %}">
             <div class="OrdernarTextoEstrela">
-              <div class="textoEsporteCard"> Vôlei de Praia </div>
-              <img class="EstrelaCard" src="estrela.png">
+              <div class="textoEsporteCard"> Vôlei Quadra </div>
+              <img class="EstrelaCard" src="{% static 'img/estrelaVerde.png' %}">
             </div>
-            <div class="textoInformacaoCard"> Morro do Céu - Niterói</div>
-            <div class="textoInformacaoCard"> Seg, Qua e Sexta (8h às 10h)</div>
+            <div class="textoInformacaoCard"> Inhaúma - Rio de Janeiro</div>
+            <div class="textoInformacaoCard"> Ter, Qui e Sex (20h às 22h)</div>
             </div>
-            <div class="textoCardVerde"> Local: Praia de Piratininga</div>
+            <div class="textoCardVerde"> Local: Quadra da EM Ceará</div>
             <div class="textoCardVerde"> Equipamento Disponível</div>
-            <div class="textoPrecoCard"> R$15 / mês </div>
+            <div class="textoPrecoCard"> R$5 / mês </div>
           </div>
           <div class="cardCriado">
             <div class="cardEsporte"> 
-            <img class="imagemCard"src="esportes.png">
+            <img class="imagemCard"src="{% static 'img/atletismo.png' %}">
             <div class="OrdernarTextoEstrela">
-              <div class="textoEsporteCard"> Vôlei de Praia </div>
-              <img class="EstrelaCard" src="estrela.png">
+              <div class="textoEsporteCard"> Atletismo </div>
+              <img class="EstrelaCard" src="{% static 'img/estrelaCinza.png' %}">
             </div>
             <div class="textoInformacaoCard"> Morro do Céu - Niterói</div>
-            <div class="textoInformacaoCard"> Seg, Qua e Sexta (8h às 10h)</div>
+            <div class="textoInformacaoCard"> Seg e Quar (6h às 8h)</div>
             </div>
-            <div class="textoCardVerde"> Local: Praia de Piratininga</div>
-            <div class="textoCardVerde"> Equipamento Disponível</div>
-            <div class="textoPrecoCard"> R$15 / mês </div>
+            <div class="textoCardVerde"> Local: Pista de Atletismo</div>
+            <div class="textoCardVerde"> Sem Equipamento</div>
+            <div class="textoPrecoCard"> R$5 / mês </div>
           </div>
         </div>
         <div id="organizarCards">
           <div class="cardCriado">
             <div class="cardEsporte"> 
-            <img class="imagemCard"src="esportes.png">
+            <img class="imagemCard"src="{% static 'img/futebolCampo.png' %}">
             <div class="OrdernarTextoEstrela">
-              <div class="textoEsporteCard"> Vôlei de Praia </div>
-              <img class="EstrelaCard" src="estrela.png">
+              <div class="textoEsporteCard"> Futebol </div>
+              <img class="EstrelaCard" src="{% static 'img/estrelaCinza.png' %}">
             </div>
-            <div class="textoInformacaoCard"> Morro do Céu - Niterói</div>
-            <div class="textoInformacaoCard"> Seg, Qua e Sexta (8h às 10h)</div>
+            <div class="textoInformacaoCard"> Fonseca - Niterói</div>
+            <div class="textoInformacaoCard"> Ter e Sex (20h às 22h)</div>
             </div>
-            <div class="textoCardVerde"> Local: Praia de Piratininga</div>
-            <div class="textoCardVerde"> Equipamento Disponível</div>
-            <div class="textoPrecoCard"> R$15 / mês </div>
+            <div class="textoCardVerde"> Local: Morro do Estado</div>
+            <div class="textoCardVerde"> Tragam bola!</div>
+            <div class="textoPrecoCard"> R$0 / mês </div>
           </div>
           <div class="cardCriado">
             <div class="cardEsporte"> 
-            <img class="imagemCard"src="esportes.png">
+            <img class="imagemCard"src="{% static 'img/jiujitsu.png' %}">
             <div class="OrdernarTextoEstrela">
-              <div class="textoEsporteCard"> Vôlei de Praia </div>
-              <img class="EstrelaCard" src="estrela.png">
+              <div class="textoEsporteCard"> Jiu-Jitsu </div>
+              <img class="EstrelaCard" src="{% static 'img/estrelaVerde.png' %}">
             </div>
-            <div class="textoInformacaoCard"> Morro do Céu - Niterói</div>
-            <div class="textoInformacaoCard"> Seg, Qua e Sexta (8h às 10h)</div>
+            <div class="textoInformacaoCard"> Salgueiro- Niterói</div>
+            <div class="textoInformacaoCard"> Qua e Sab (17h30 às 19h)</div>
             </div>
-            <div class="textoCardVerde"> Local: Praia de Piratininga</div>
-            <div class="textoCardVerde"> Equipamento Disponível</div>
-            <div class="textoPrecoCard"> R$15 / mês </div>
+            <div class="textoCardVerde"> Local: Acad. Lutando Bem</div>
+            <div class="textoCardVerde"> Usar roupas largas</div>
+            <div class="textoPrecoCard"> R$20 / mês </div>
           </div>
           <div class="cardCriado">
             <div class="cardEsporte"> 
-            <img class="imagemCard"src="esportes.png">
+            <img class="imagemCard" src="{% static 'img/muaythai.png' %}" >
             <div class="OrdernarTextoEstrela">
-              <div class="textoEsporteCard"> Vôlei de Praia </div>
-              <img class="EstrelaCard" src="estrela.png">
+              <div class="textoEsporteCard"> Muay Thai </div>
+              <img class="EstrelaCard" src="{% static 'img/estrelaVerde.png' %}">
             </div>
-            <div class="textoInformacaoCard"> Morro do Céu - Niterói</div>
-            <div class="textoInformacaoCard"> Seg, Qua e Sexta (8h às 10h)</div>
+            <div class="textoInformacaoCard"> Maré - Rio de Janeiro</div>
+            <div class="textoInformacaoCard"> Seg, Qua (18h às 20h)</div>
             </div>
-            <div class="textoCardVerde"> Local: Praia de Piratininga</div>
-            <div class="textoCardVerde"> Equipamento Disponível</div>
-            <div class="textoPrecoCard"> R$15 / mês </div>
+            <div class="textoCardVerde"> Local: Quadra Esportes Maré</div>
+            <div class="textoCardVerde"> Tragam Equipamento </div>
+            <div class="textoPrecoCard"> R$10 / mês </div>
           </div>
         </div>
       </div>  
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
+  <script>
+    document.getElementById('inputBusca').addEventListener('input', function() {
+      let filter = this.value.toLowerCase();
+      let cards = document.getElementsByClassName('cardCriado');
+
+      for (let i = 0; i < cards.length; i++) {
+        let card = cards[i];
+        let cardText = card.innerText.toLowerCase();
+
+        if (cardText.includes(filter)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      }
+    });
+  </script>
 </html>
