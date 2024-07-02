@@ -35,3 +35,9 @@ const testimonials = document.getElementById('testimonials');
     showTestimonial(currentIndex);
     
     //setInterval(nextTestimonial, 5000); // Change testimonial every 5 seconds
+
+    //Tela de cadastro membro 
+
+   
+
+  

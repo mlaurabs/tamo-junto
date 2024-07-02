@@ -23,7 +23,7 @@
                 <input class="inputs" id="inputNome" type="text">
                 <div class="posicaoLabel" id="labelIdade"> Idade </div>
                 <select class="inputs" id="inputIdade">
-                    <option value="18"> 18 </option>
+                    
                 </select>
             </div>
             <div class="organizarInputsLinhas">
@@ -75,7 +75,7 @@
             <input class="inputs" id="inputBiografia" type="text">
             <div class="posicaoLabel" id="labelInteresse"> O que mais você tem interesse? </div>
             <div class="organizarInputsLinhas">
-                <select class="inputs" id="inputInteresse">
+                <select class="inputs" id="inputInteresseInstrutor">
                     <optgroup label="Esportes"> 
                         <option value="yoga"> yoga </option>
                         <option value="volei"> vôlei </option>
@@ -92,7 +92,7 @@
                         <option value="niteroi"> Niterói </option>
                     </optgroup>
                 </select>
-                <div class="posicaoLabel" id="labelInstruir"> Qual ou quais atividaes você gostaria de instruir? </div>
+                <div class="posicaoLabel" id="labelInstruir"> Qual ou quais atividades você gostaria de instruir? </div>
                 <input class="inputs" id="inputInstruir" type="text">
             </div>
             <div id="divCertificado"></div>
@@ -105,6 +105,18 @@
         </form>
 
     </div>
-    
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputIdade = document.getElementById('inputIdade');
+            for (let age = 14; age <= 99; age++) {
+                const option = document.createElement('option');
+                option.value = age;
+                option.text = age;
+                inputIdade.appendChild(option);
+            }
+        });
+
+    </script>
 </body>
 </html>

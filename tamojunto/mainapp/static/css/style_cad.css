@@ -33,6 +33,8 @@ h1 {
   color: #336D85;
   margin-bottom: 20px;
   font-size: 2.5rem;
+  background-color: pink;
+  
 }
 .options {
   display: flex;

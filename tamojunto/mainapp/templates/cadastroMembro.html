@@ -20,9 +20,9 @@
             <div class="organizarInputsLinhas">
                 <div class="posicaoLabel" id="labelNome"> Nome Completo </div>
                 <input class="inputs" id="inputNome" type="text">
+
                 <div class="posicaoLabel" id="labelIdade"> Idade </div>
                 <select class="inputs" id="inputIdade">
-                    <option value="18"> 18 </option>
                 </select>
             </div>
             <div class="organizarInputsLinhas">
@@ -73,7 +73,8 @@
             <div class="posicaoLabel" id="labelBiografia"> Biografia </div>
             <input class="inputs" id="inputBiografia" type="text">
             <div class="posicaoLabel" id="labelInteresse"> O que mais você tem interesse? </div>
-            <select class="inputs" id="inputInteresse">
+           
+            <select class="inputs" id="inputInteresseMembro">
                 <optgroup label="Esportes"> 
                     <option value="yoga"> yoga </option>
                     <option value="volei"> vôlei </option>
@@ -96,6 +97,19 @@
         </form>
 
     </div>
-    
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputIdade = document.getElementById('inputIdade');
+            for (let age = 14; age <= 99; age++) {
+                const option = document.createElement('option');
+                option.value = age;
+                option.text = age;
+                inputIdade.appendChild(option);
+            }
+        });
+
+    </script>
 </body>
+
 </html>

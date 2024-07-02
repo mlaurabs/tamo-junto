@@ -53,65 +53,61 @@
 }
 #inputIdade{
     width: 217px;
-    height: 64px;
 }
 #labelPais{
     margin-left: 20px;
 }
 #inputPais{
     width: 359px;
-    height: 64px;
-    margin-right: 26px;
+    margin-right: 31px;
 }
 #labelCep{
     margin-left: 410px;
 }
 #inputCep{
     width: 186px;
-    margin-right: 26px;
+    margin-right: 30px;
 }
 #labelCidade{
     margin-left: 626px;
 }
 #inputCidade{
     width: 330px;
-    height: 64px;
 }
 #labelRua{
     margin-left: 20px;
 }
 #inputRua{
     width: 186px;
-    margin-right: 18px;
+    margin-right: 27px;
 }
 #labelNum{
     margin-left: 233px;
 }
 #inputNum{
     width: 72px;
-    margin-right: 18px;
+    margin-right: 27px;
 }
 #labelComplemento{
     margin-left: 332px;
 }
 #inputComplemento{
     width: 156px;
-    margin-right: 27px;
+    margin-right: 36px;
 }
 #labelCodigo{
     margin-left: 522px;
 }
 #inputCodigo{
     width: 93px;
-    height: 64px;
-    margin-right: 18px;
+    margin-right: 28px;
 }
 #labelDDD{
     margin-left: 642px;
 }
 #inputDDD{
     width: 76px;
-    margin-right: 18px;
+    margin-right: 28px;
 }
 #labelTelefone{
     margin-left: 751px;
@@ -124,9 +120,10 @@
     z-index: 100001;
 }
 #inputFoto{
+    display: flex;
+    align-items: center;
     width: 597px;
-    height: 40px;
-    padding-top: 18px;
+    padding-top: 13px;
     margin-right: 26px;
     z-index: 100000;
     
@@ -135,8 +132,8 @@
     display: flex;
     position:absolute;
     width: 102px;
-    height: 25px;
-    margin-top: 40px;
+    height: 32px;
+    margin-top: 35px;
     margin-left: 3px;
     background-color: white;
     z-index: 100001;
@@ -145,10 +142,10 @@
     display: flex;
     position:absolute;
     justify-content: center;
-    padding-top: 10px;
+    align-items: center;
     width: 129px;
-    height: 25px;
-    margin-top: 35px;
+    height: 35px;
+    margin-top: 30px;
     margin-left: 450px;
     border-radius: 10px;
     font-size: 14px;
@@ -163,7 +160,6 @@
 }
 #inputGenero{
     width: 314px;
-    height: 64px;
 }
 #subtituloInteresses{
     margin-top: 43px;
@@ -172,21 +168,24 @@
     margin-left: 20px;
 }
 #inputBiografia{
-    width: 926px;
+    width: 936px;
 }
 #labelInteresse{
     margin-left: 20px;
 }
-#inputInteresse{
+#inputInteresseMembro{
     width: 936px;
     height: 64px;
 }
+#inputInteresseInstrutor{
+    width: 504px;
+}
 #labelInstruir{
-    margin-left: 551px;
+    margin-left: 535px;
 }
 #inputInstruir{
     width: 405px;
-    margin-left: 27px;
+    margin-left: 25px;
 }
 #botaoFinalizar{
     width: 205px;
@@ -206,9 +205,10 @@
     z-index: 100001;
 }
 #inputCertificado{
+    display: flex;
+    align-items: center;
     width: 936px;
-    height: 40px;
-    padding-top: 18px;
+    padding-top: 13px;
     margin-right: 26px;
     z-index: 100000;
     
@@ -217,8 +217,8 @@
     display: flex;
     position:absolute;
     width: 102px;
-    height: 25px;
-    margin-top: 40px;
+    height: 32px;
+    margin-top: 35px;
     margin-left: 3px;
     background-color: white;
     z-index: 100001;
@@ -227,11 +227,11 @@
     display: flex;
     position:absolute;
     justify-content: center;
-    padding-top: 10px;
+    align-items: center;
     width: 129px;
-    height: 25px;
+    height: 35px;
+    margin-top: 30px;
     margin-left: 800px;
-    margin-top: 35px;
     border-radius: 10px;
     font-size: 14px;
     font-weight: bold;
