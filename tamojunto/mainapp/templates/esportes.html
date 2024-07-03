@@ -14,8 +14,12 @@
 </head>
 
 <body>
-    <!-- Navbar fixa no topo -->
-  {% include "default/nav.html" %}
+    <!-- Navbar -->
+    {% if user.is_authenticated %}
+        {% include "default/nav_logado.html" %}
+    {% else %}
+        {% include "default/nav.html" %}
+    {% endif %}
     <div class="container">
         <h1>ESPORTES</h1>
         <div class="sports-list">

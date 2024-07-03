@@ -26,8 +26,12 @@
     </style>
   </head>
   <body>
-    <!-- Navbar fixa no topo -->
-    {% include "default/nav.html" %}
+    <!-- Navbar -->
+    {% if user.is_authenticated %}
+        {% include "default/nav_logado.html" %}
+    {% else %}
+        {% include "default/nav.html" %}
+    {% endif %}
 
     <!-- Conteúdo principal da página -->
     <main>

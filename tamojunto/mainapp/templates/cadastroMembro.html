@@ -15,10 +15,10 @@
     
 </head>
   <body>
-    {% include "default/nav.html" %}
     <div id="tituloCadastro"> Cadastre-se como membro</div>
     <div id="containerDadosPessoais"> 
-        <form action="">
+        <form action="{% url 'cadastroMembro' %}" method="post">
+            {% csrf_token %}
             <div class="subtituloCadastro"> Dados pessoais </div>
             <div class="organizarInputsLinhas">
                 <div class="posicaoLabel" id="labelNome"> Nome Completo </div>
@@ -74,26 +74,41 @@
                 
             
             </div>
-            <div class="subtituloCadastro"> Interesses </div>
+            <div class="subtituloCadastro" style="margin-top: 10px;"> Interesses </div>
             <div class="posicaoLabel" id="labelBiografia"> Biografia </div>
             <input class="inputs" id="inputBiografia" type="text">
             
-           
-            <select class="inputs" style="margin-top: 20px;" id="inputInteresseInstrutor" data-placeholder="O que mais você tem interesse?" multiple>
-                <option value="yoga"> Yoga </option>
-                <option value="volei"> Vôlei </option>
-                <option value="futsal"> Saúde </option>
-                <option value="basquete"> Basquete </option>
-                <option value="handebol"> Zona sul </option>
-                <option value="futebol"> Futebol </option>
-                <option value="futebol"> Zona norte </option>
-                <option value="futebol"> Caminhada </option>
-                <option value="futebol"> Corrida </option>
-                <option value="futebol"> Atividades ao ar livre </option>
-            </select>
-          
+            <div class="organizarInputsLinhas">
+                <select class="inputs" style="margin-top: 20px;" id="inputInteresseInstrutor" data-placeholder="O que mais você tem interesse?" multiple>
+                    <option value="yoga"> Yoga </option>
+                    <option value="volei"> Vôlei </option>
+                    <option value="futsal"> Saúde </option>
+                    <option value="basquete"> Basquete </option>
+                    <option value="handebol"> Zona sul </option>
+                    <option value="futebol"> Futebol </option>
+                    <option value="futebol"> Zona norte </option>
+                    <option value="futebol"> Caminhada </option>
+                    <option value="futebol"> Corrida </option>
+                    <option value="futebol"> Atividades ao ar livre </option>
+                </select>
+            </div>
 
-            <button id="botaoFinalizar"> Finalizar cadastro </button>
+            <div class="subtituloCadastro" style="margin-top: 10px;"> Acesso a Conta </div>
+            <div class="organizarInputsLinhas">
+                <div class="posicaoLabel" id="labelUsuario"> Usuário </div>
+                <input class="inputs"  id="inputUsuario" name="username" type="text">
+                <div style="width: 30px;"></div>
+                <div class="posicaoLabel" id="labelEmail"> Email </div>
+                <input class="inputs"  id="inputEmail" name="email" type="email">
+                <div style="width: 30px;"></div>
+                <div class="posicaoLabel" id="labelSenha"> Senha </div>
+                <input class="inputs"  id="inputSenha" name="password" type="password">
+
+                
+            </div>
+
+  
+            <button id="botaoFinalizar" type="submit"> Finalizar cadastro </button>
         </form>
 
     </div>

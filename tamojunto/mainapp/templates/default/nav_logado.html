@@ -1,8 +1,8 @@
 {% load static %}
 
-<link rel="stylesheet" href="{% static 'css/style_nav_loagdo.css' %}">
 <nav class="navbar navbar-expand-lg  sticky-top">
-    <a class="navbar-brand" href="#" style="margin-left: 30px">
+    <link rel="stylesheet" href="{% static 'css/style_nav_logado.css' %}">
+    <a class="navbar-brand" href="{% url 'home' %}" style="margin-left: 30px">
     <img src="{% static 'img/logo.png' %}" height="50" class="d-inline-block align-center" alt="logo">
     TAMO JUNTO
     </a>
@@ -15,7 +15,7 @@
         <a class="nav-link" href="#">Quem somos?</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Cards</a>
+        <a class="nav-link" href="{% url 'cards' %}">Cards</a>
         </li>
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -23,7 +23,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Saúde e Atividade Física</a>
-            <a class="dropdown-item" href="#">Esportes populares</a>
+            <a class="dropdown-item" href="{% url 'esportes' %}">Esportes populares</a>
             <a class="dropdown-item" href="#">Como funciona a comunidade TAMO JUNTO?</a>
         </div>
         </li>
@@ -57,5 +57,3 @@
     </ul>
     </div>
 </nav>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
