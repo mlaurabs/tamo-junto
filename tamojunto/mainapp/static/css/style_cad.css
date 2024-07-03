@@ -27,25 +27,27 @@ body {
 
 .container {
   text-align: center;
+  width: 100%;
   padding-top: 100px; /* Adicione essa linha para criar um espaço entre a navbar e o conteúdo */
 }
 h1 {
-  color: #336D85;
+  color: #0D6F8F;
   margin-bottom: 20px;
   font-size: 2.5rem;
-  background-color: pink;
+  align-items: center;
   
 }
 .options {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-left: 55px;
+  justify-content: center;
   gap: 10rem; /* Aumenta o espaço entre as caixas */
   width: 100%;
   max-width: 1200px;
 }
 .option {
   width: 350px;
+  margin-top: 30px;;
   height: 484px;
   padding: 20px;
   border-radius: 45px;
@@ -66,7 +68,7 @@ h1 {
 .button {
   display: block;
   padding: 20px 0px;
-  background-color: #A4D65E;
+  background-color: #8FCE3D;
   color: white;
   text-align: center;
   border: none;
@@ -77,13 +79,15 @@ h1 {
   width: auto;
 }
 .membro {
-  background-color: #336D85;
+  background-color: #0D6F8F;
+  height: 500px;
 }
 .membro h2, .membro p {
   color: white;
 }
 .instrutor {
-  border: 2px solid #336D85;
+  border: 2px solid #0D6F8F;
+  height: 500px;
 }
 .instrutor h2, .instrutor p {
   color: #336D85;
@@ -92,7 +96,7 @@ h1 {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
-  color: #336D85;
+  color: #0D6F8F;
 }
 
 .option p{
