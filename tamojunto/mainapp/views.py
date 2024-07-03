@@ -32,7 +32,21 @@ def cadastroMembro(request):
 
 
 def cadastroInstrutor(request):
-    return render(request, "cadastroInstrutor.html") 
+    if(request.method == "GET"):
+        return render(request, "cadastroInstrutor.html")
+    else:
+        username = request.POST["username"]
+        email = request.POST["email"]
+        senha = request.POST["password"]
+
+        user = User.objects.filter(username=username).first()
+        if(user):
+            return HttpResponse('Já exsite usuário com esse username')
+    
+        user = User.objects.create_user(username=username, email=email, password=senha)
+        user.save()
+    
+        return redirect("login") 
 
 def esportes(request):
     return render(request, "esportes.html") 

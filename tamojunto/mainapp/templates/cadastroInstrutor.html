@@ -17,7 +17,8 @@
     {% include "default/nav.html" %}
     <div id="tituloCadastro"> Cadastre-se como Instrutor</div>
     <div id="containerDadosPessoais"> 
-        <form action="">
+        <form action="{% url 'cadastroInstrutor' %}" method="post">
+            {% csrf_token %}
             <div class="subtituloCadastro"> Dados pessoais </div>
             <div class="organizarInputsLinhas">
                 <div class="posicaoLabel" id="labelNome"> Nome Completo </div>
@@ -93,7 +94,19 @@
                 <input type="text" class="form-control" id="inputCertificadoPath" readonly>
                 <button type="button" class="uploadButton" onclick="document.getElementById('inputCertificadoFile').click()">Upload</button>
             </div>
-            <button id="botaoFinalizar"> Finalizar cadastro </button>
+            
+            <div class="subtituloCadastro" style="margin-top: 10px;"> Acesso a Conta </div>
+            <div class="organizarInputsLinhas">
+                <div class="posicaoLabel" id="labelUsuario"> Usuário </div>
+                <input class="inputs"  id="inputUsuario" name="username" type="text">
+                <div style="width: 30px;"></div>
+                <div class="posicaoLabel" id="labelEmail"> Email </div>
+                <input class="inputs"  id="inputEmail" name="email" type="email">
+                <div style="width: 30px;"></div>
+                <div class="posicaoLabel" id="labelSenha"> Senha </div>
+                <input class="inputs"  id="inputSenha" name="password" type="password">
+            </div>
+            <button id="botaoFinalizar" type="submit"> Finalizar cadastro </button>
         </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
