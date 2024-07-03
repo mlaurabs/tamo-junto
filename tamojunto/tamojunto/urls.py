@@ -27,5 +27,6 @@ urlpatterns = [
     path('login/', views.login, name="login"),
     path('cards/', views.cards, name="cards"),
     path('login_invalido/', views.login_invalido, name="login_invalido"),
+    path('criarCard/', views.criarCard, name="criarCard"),
     path('admin/', admin.site.urls),
 ]

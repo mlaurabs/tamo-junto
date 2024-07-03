@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cards</title>
+    <link href="{% static 'css/style_criarCard.css' %}" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    {% include "default/nav_logado.html" %}
+      <div id="tituloPagina"> O que deseja compartilhar com a comunidade TAMO JUNTO? </div>
+      <div class="organizarInputsLinhas">
+      <div id="containerDadosPessoais">
+        <div class="subtituloCadastro"> Preencha os Campos abaixo </div>
+          <form action="">
+                  <div class="posicaoLabel" id="labelTitulo"> Título </div>
+                  <input class="inputs" id="inputTitulo" type="text">
+              <div class="organizarInputsLinhas">
+                <div class="posicaoLabel" id="labelCidade"> Cidade </div>
+                <select class="inputs" id="inputCidade">
+                    <option value="rio"> Rio de Janeiro </option>
+                    <option value="niteroi"> Niterói </option>
+                </select>
+                <div class="posicaoLabel" id="labelRua"> Rua </div>
+                <input class="inputs" id="inputRua" type="text">
+                <div class="posicaoLabel" id="labelNum"> N° </div>
+                <input class="inputs" id="inputNum" type="text">
+                <div class="posicaoLabel" id="labelReferencia"> Ponto de Referência </div>
+                <input class="inputs" id="inputReferencia" type="text">
+              </div>
+              <div class="organizarInputsLinhas">
+                  <div class="posicaoLabel" id="labelBanner"> Banner </div>
+                  <input class="inputs" id="inputBanner" type="file">
+                  <div id="divBanner"></div>
+                  <div id="botaoBannerUpload"> Upload</div>
+              </div>
+              <div class="posicaoLabel" id="labelDescricao"> Descrição </div>
+              <input class="inputs" id="inputDescricao" type="text">
+            <div class="subtituloCadastro"> Frequência </div>
+            <div class="organizarInputsLinhas">
+              <div class="posicaoLabel" id="labelSemana"> Quantas vezes por semana </div>
+              <select class="inputs" id="inputSemana">
+                  <option value="1x"> 1x </option>
+                  <option value="2x"> 2x </option>
+                  <option value="3x"> 3x </option>
+                  <option value="4x"> 4x </option>
+                  <option value="5x"> 5x </option>
+                  <option value="6x"> 6x </option>
+                  <option value="7x"> 7x </option>
+              </select>
+              <div class="posicaoLabel" id="labelDia"> Dias </div>
+              <select class="inputs" id="inputDia"> 
+                  <option value="segunda"> segunda </option>
+                  <option value="terca"> terça </option>
+                  <option value="quarta"> quarta </option>
+                  <option value="quinta"> quinta </option>
+                  <option value="sexta"> sexta </option>
+                  <option value="sabado"> sábado </option>
+                  <option value="domingo"> domingo </option>
+              </select>
+              <div class="posicaoLabel" id="labelHorario"> Horário </div>
+              <input class="inputs" id="inputHorario" type="text">
+            </div>
+              
+          </form>
+
+      </div>
+  </body>
+  <div class="cardCriado">
+    <div class="cardEsporte"> 
+    <img class="imagemCard"src="">
+    <div class="OrdernarTextoEstrela">
+      <div class="textoEsporteCard"> Título </div>
+      <img class="EstrelaCard" src="{% static 'img/estrelaVerde.png' %}">
+    </div>
+    <div class="textoInformacaoCard"> Endereço</div>
+    <div class="textoInformacaoCard"> Dias/Horário</div>
+    </div>
+    <div class="textoCardVerde"> </div>
+    <div class="textoCardVerde"> Descrição</div>
+    <div class="textoPrecoCard"> Valor </div>
+  </div>
+</div>
+<button id="botaoFinalizar"> Finalizar  </button>
+</html>

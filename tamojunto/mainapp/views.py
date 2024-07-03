@@ -60,3 +60,10 @@ def cards(request):
 
 def login_invalido(request):
     return render(request, "login_invalido.html") 
+
+def criarCard(request):
+    if(request.user.is_authenticated):
+        return render(request, "criarCard.html") 
+    else:
+        return redirect("login")
+
