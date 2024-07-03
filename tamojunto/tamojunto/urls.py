@@ -26,5 +26,6 @@ urlpatterns = [
     path('esportes/', views.esportes, name="esportes"),
     path('login/', views.login, name="login"),
     path('cards/', views.cards, name="cards"),
+    path('criarCard/', views.criarCard, name="criarCard"),
     path('admin/', admin.site.urls),
 ]

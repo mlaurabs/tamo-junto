@@ -1,0 +1,226 @@
+
+#tituloPagina{
+    padding-left: 60px;
+    margin-top: 33px;
+    font-size: 30px;
+    color: rgba(13,111,143,1);
+  }
+  
+  #containerDadosPessoais{
+    margin-left: 60px;
+    width: 936px;
+    margin-top:17px;
+  }
+  
+  .subtituloCadastro{
+    font-size: 25px;
+    color: rgba(49,49,49,0.7);
+    margin-top: 43px;
+  
+  }
+  .posicaoLabel{
+    display: flex;
+    position: absolute;
+    margin-top: 6px;
+    font-size: 18px;
+    padding: 4px;
+    color: rgba(28, 27, 31, 1);
+    background-color:  white
+  }
+  
+  .inputs{
+    height: 56px;
+    margin-top: 20px;
+    border: solid 3px rgba(121, 116, 126, 1);
+    border-radius: 4px 4px 0px 0px;
+    background-color: transparent;
+    font-size: 16px;
+    color: rgba(28, 27, 31, 1);
+  }
+  .organizarInputsLinhas{
+    display: flex;
+    flex-direction: row;
+  }
+  #labelTitulo{
+    margin-left: 20px;
+  }
+  #inputTitulo{
+    width: 936px;
+  }
+  #labelCidade{
+    margin-left: 20px;
+  }
+  #inputCidade{
+    width: 330px;
+    margin-right: 30px;
+  }
+  #labelRua{
+    margin-left: 380px;
+  }
+  #inputRua{
+    width: 186px;
+    margin-right: 32px;
+  }
+  #labelNum{
+    margin-left: 600px;
+  }
+  #inputNum{
+    width: 72px;
+    margin-right: 30px;
+  }
+  #labelReferencia{
+    margin-left: 701px;
+    width: 170px;
+  }
+  #inputReferencia{
+    width: 255px;
+  }
+  #labelBanner{
+    margin-left: 20px;
+    z-index: 100001;
+  }
+  #inputBanner{
+    width: 936px;
+    padding-top: 15px;
+    z-index: 100000;
+  
+  }
+  #divBanner{
+    display: flex;
+    position:absolute;
+    width: 102px;
+    height: 31px;
+    margin-top: 37px;
+    margin-left: 3px;
+    background-color: white;
+    z-index: 100001;
+  }
+  #botaoBannerUpload{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    width: 129px;
+    height: 35px;
+    margin-top: 30px;
+    margin-left: 770px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: rgba(143,206,61,1);
+    color: white;
+  }
+  #labelDescricao{
+    margin-left: 20px;
+  }
+  #inputDescricao{
+    width: 936px;
+  }
+  #labelSemana{
+    margin-left: 20px;
+  }
+  #inputSemana{
+    width: 249px;
+    margin-right: 30px;
+  }
+  #labelDia{
+    margin-left: 299px;
+  }
+  #inputDia{
+    width: 377px;
+    margin-right: 30px;
+  }
+
+  #labelHorario{
+    margin-left:709px;
+  }
+  #inputHorario{
+    width: 247px;
+  }
+  
+  
+ 
+ 
+  .cardCriado{
+    margin-top: 120px;
+    height: 382px;
+    width: 255px;
+    background-color:rgba(143, 206, 61, 1); 
+    margin-left: 50px;
+    border-radius: 34px;
+    }
+    .cardEsporte{
+    height: 253px;
+    width: 234px;
+    background-color: white;
+    margin-left:12px;
+    margin-top:6px;
+    border-radius:28px;
+    }
+    .imagemCard{
+    height:137px;
+    width: 205px;
+    margin-top:14px;
+    margin-left:16px;
+    }
+    .OrdernarTextoEstrela{
+    display: flex;
+    flex-direction: row;
+    }
+    .textoEsporteCard{
+    font-size: 24px;
+    font-weight:bold;
+    color:rgba(13,111,143,1);
+    margin-left: 12px;
+    margin-top:2px;
+    }
+    .EstrelaCard{
+    height:15.64px;
+    width: 20.92px;
+    border-radius:1px;
+    margin-top:14px;
+    margin-left:30px;
+    }
+    .textoInformacaoCard{
+    font-size:16px;
+    color:rgba(38,50,56,0.5);
+    margin-left: 12px;
+    margin-top:2px;
+    }
+    .textoCardVerde{
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    margin-left: 24px;
+    margin-top:10px;
+    }
+    .textoPrecoCard{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:white;
+      margin-left:128px;
+      margin-top:10px;
+      width: 117px;
+      height:36.16px;
+      border-radius: 28px;
+      color:rgba(13,111,143,1);
+      font-size:16px;
+     
+      font-weight:bold;
+      }
+
+      #botaoFinalizar{
+        width: 205px;
+        height: 47px;
+        margin-left: 1068px;
+        margin-top: 30px;
+        font-size:20px;
+        font-weight: bold;
+        background-color:rgba(143,206,61,1);
+        border:0px;
+        color: white;
+        border-radius: 10px;
+      
+      }
+            

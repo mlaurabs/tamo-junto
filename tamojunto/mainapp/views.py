@@ -22,3 +22,7 @@ def login(request):
 
 def cards(request):
     return render(request, "cards.html") 
+
+
+def criarCard(request):
+    return render(request, "criarCard.html") 
