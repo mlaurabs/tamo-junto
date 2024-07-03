@@ -71,21 +71,50 @@
           </form>
 
       </div>
+      <div class="cardCriado">
+        <div class="cardEsporte"> 
+        <img class="imagemCard"src="">
+        <div class="OrdernarTextoEstrela">
+          <div class="textoEsporteCard"> Título </div>
+          <img class="EstrelaCard" src="{% static 'img/estrelaVerde.png' %}">
+        </div>
+        <div class="textoInformacaoCard"> Endereço</div>
+        <div class="textoInformacaoCard"> Dias/Horário</div>
+        </div>
+        <div class="textoCardVerde"> </div>
+        <div class="textoCardVerde"> Descrição</div>
+        <div class="textoPrecoCard"> Valor </div>
+      </div>
+    </div>
+    <button id="botaoFinalizar"> Finalizar  </button>
+    
+    
+    <script>
+      function atualizarCard() {
+        document.getElementById('cardTitulo').innerText = document.getElementById('inputTitulo').value;
+        document.getElementById('cardEndereco').innerText = `${document.getElementById('inputRua').value}, ${document.getElementById('inputNum').value} - ${document.getElementById('inputCidade').selectedOptions[0].text}`;
+        document.getElementById('cardHorario').innerText = `${document.getElementById('inputDia').selectedOptions[0].text} (${document.getElementById('inputHorario').value})`;
+        document.getElementById('cardDescricao').innerText = document.getElementById('inputDescricao').value;
+      }
+
+      document.getElementById('inputTitulo').addEventListener('input', atualizarCard);
+      document.getElementById('inputCidade').addEventListener('change', atualizarCard);
+      document.getElementById('inputRua').addEventListener('input', atualizarCard);
+      document.getElementById('inputNum').addEventListener('input', atualizarCard);
+      document.getElementById('inputReferencia').addEventListener('input', atualizarCard);
+      document.getElementById('inputDescricao').addEventListener('input', atualizarCard);
+      document.getElementById('inputSemana').addEventListener('change', atualizarCard);
+      document.getElementById('inputDia').addEventListener('change', atualizarCard);
+      document.getElementById('inputHorario').addEventListener('input', atualizarCard);
+      
+      document.getElementById('inputBanner').addEventListener('change', function(event) {
+        const reader = new FileReader();
+        reader.onload = function() {
+          document.getElementById('cardImagem').src = reader.result;
+        }
+        reader.readAsDataURL(event.target.files[0]);
+      });
+    </script>
   </body>
-  <div class="cardCriado">
-    <div class="cardEsporte"> 
-    <img class="imagemCard"src="">
-    <div class="OrdernarTextoEstrela">
-      <div class="textoEsporteCard"> Título </div>
-      <img class="EstrelaCard" src="{% static 'img/estrelaVerde.png' %}">
-    </div>
-    <div class="textoInformacaoCard"> Endereço</div>
-    <div class="textoInformacaoCard"> Dias/Horário</div>
-    </div>
-    <div class="textoCardVerde"> </div>
-    <div class="textoCardVerde"> Descrição</div>
-    <div class="textoPrecoCard"> Valor </div>
-  </div>
-</div>
-<button id="botaoFinalizar"> Finalizar  </button>
+  
 </html>
