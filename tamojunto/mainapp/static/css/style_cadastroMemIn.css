@@ -260,3 +260,13 @@ body{
     background-color: rgba(143,206,61,1);
     color: white;
 }
+
+#labelUsuario{
+    margin-left: 20px;
+}
+#labelEmail{
+    margin-left: 240px;
+}
+#labelSenha{
+    margin-left: 460px;
+}
